@@ -27,7 +27,7 @@ const Header = () => {
         <ul className='items-center hidden space-x-8 lg:flex'>
           <li>
             <NavLink
-              to='statistics'
+              to='/statistics'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
              Statistics
@@ -89,13 +89,13 @@ const Header = () => {
                 <nav>
                   <ul className='space-y-4'>
                     <li>
-                      <Link to='/' className='default'>
+                      <Link to='/statistics' className='default'>
                       Statistics
                       </Link>
                     </li>
                     <li>
                       <Link
-                        to='/books'
+                        to='/applied_job'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                       >
                         Applied Jobs
@@ -103,7 +103,7 @@ const Header = () => {
                     </li>
                     <li>
                       <Link
-                        to='/about'
+                        to='/blog'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                       >
                         Blog
