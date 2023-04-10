@@ -7,13 +7,13 @@ import {
   LinkIcon
   
 } from '@heroicons/react/24/solid'
-import Banner from './Banner'
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <div className='bg-purple-50'>
-        <div className=' px-4 pt-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+        <div className=' my-container'>
       <div className='relative flex items-center justify-between'>
         {/* Logo Section */}
         <Link to='/' className='inline-flex items-center'>
@@ -27,7 +27,7 @@ const Header = () => {
         <ul className='items-center hidden space-x-8 lg:flex'>
           <li>
             <NavLink
-              to='/'
+              to='statistics'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
              Statistics
@@ -35,7 +35,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to='/books'
+              to='/applied_job'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Applied Jobs
@@ -43,7 +43,7 @@ const Header = () => {
           </li>
           <li>
             <NavLink
-              to='/about'
+              to='/blog'
               className={({ isActive }) => (isActive ? 'active' : 'default')}
             >
               Blog
@@ -117,7 +117,7 @@ const Header = () => {
         </div>
       </div>
 
-      <Banner />
+      
     </div>
     </div>
   )

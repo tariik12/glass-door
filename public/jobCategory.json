@@ -1,0 +1,27 @@
+[
+
+    {
+        "id": "1",
+        "category":"Account & Finance",
+        "picture": "https://www.linkpicture.com/q/accounts-1_8.png",
+        "description": "300 Jobs Available"
+        },
+    {
+        "id": "2",
+        "category":"Creative Design",
+        "picture": "https://www.linkpicture.com/q/Group_7.png",
+        "description": "100+ Jobs Available"
+        },
+    {
+        "id": "3",
+        "category":"Marketing & Sales",
+        "picture": "https://www.linkpicture.com/q/social-media-1_3.png",
+        "description": "150 Jobs Available"
+        },
+    {
+        "id": "4",
+        "category":"Engineering Job",
+        "picture": "https://www.linkpicture.com/q/chip-1_3.png",
+        "description": "224 Jobs Available"
+        }
+]
