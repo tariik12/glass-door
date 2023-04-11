@@ -5,6 +5,7 @@ import FeaturedJobs from './FeaturedJobs/FeaturedJobs';
 import { useLoaderData } from 'react-router-dom';
 
 
+
 const Home = () => {
     const jobCategories = useLoaderData()
     return (

@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Job = ({jb}) => {
-    console.log(jb)
     const {category,description,picture} = jb
     return (
         <div>
