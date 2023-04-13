@@ -13,7 +13,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <div className='bg-purple-50'>
-        <div className=' my-container'>
+        <div className='pt-12 my-container'>
       <div className='relative flex items-center justify-between'>
         {/* Logo Section */}
         <Link to='/' className='inline-flex items-center'>
@@ -58,7 +58,7 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <button className="btn btn-primary">Star Applying</button>
+        <button className="my-btn">Star Applying</button>
         {/* Mobile Navbar Section */}
         <div className='lg:hidden'>
           {/* Dropdown Open Button */}

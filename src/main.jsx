@@ -13,6 +13,7 @@ import AppliedJobs from './components/AppliedJobs';
 import Home from './components/Home/Home';
 import ErrorPage from './components/Errorpage';
 import DetailsFeaturedCard from './components/Home/DetailsFeaturedCard/DetailsFeaturedCard';
+import { Toaster } from 'react-hot-toast';
 
 
 const router = createBrowserRouter([
@@ -51,4 +52,7 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(<RouterProvider router={router} />);
+ReactDOM.createRoot(document.getElementById("root")).render(<> 
+<Toaster/>
+<RouterProvider router={router} />
+</>);

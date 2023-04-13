@@ -12,7 +12,7 @@ const App = () => {
   
   return (
     <div>
-      <ProductContext.Provider value={ shop}>
+      <ProductContext.Provider value={shop}>
       <JobContext.Provider value={jobFeaturedData}>
       <Header />
       <Outlet />
