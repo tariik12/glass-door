@@ -1,23 +1,30 @@
 import React, { useState } from 'react';
-import  {  useContext } from 'react';
-import {ProductContext } from '../App';
 import CardAppliedJob from './CardAppliedJob';
-    import { getShoppingCart } from '../assets/fakebd';
-import { toast } from 'react-hot-toast';
+    import { getFeatureCard } from '../assets/fakebd';
+    import { toast } from 'react-hot-toast';
 
 
 const AppliedJobs = () => {
-    const saveData =useContext(ProductContext)
-    console.log(saveData)
-    console.log(saveData)
+    const saveData =getFeatureCard()
         const [data,setData] = useState(saveData)
     const handleData =(id)=>{
-            const k = saveData.filter(f =>f.rem_onsite_job === id)
-            setData(k)
+            const remoteJOb = saveData.filter(remote =>remote.rem_onsite_job === id)
+            if(remoteJOb){
+
+                setData(remoteJOb)
+            }
+            else{
+                toast.success('Successfully toasted!')
+            }
     }
     const remoteData =(id)=>{
-            const k = saveData.filter(f =>f.rem_onsite_job === id)
-            setData(k)
+            const onsiteJob = saveData.filter(onsite =>onsite.rem_onsite_job === id)
+            if(onsiteJob){
+                setData(onsiteJob)
+            }
+            else{
+                toast.success('Successfully toasted!')
+            }
     }
     return (
         <div>
@@ -28,8 +35,8 @@ const AppliedJobs = () => {
             </div >
            <div>
            {
-               data.map((save,index)=>
-                    <CardAppliedJob save={save} key={index}/>)
+               data.map((saveData,index)=>
+                    <CardAppliedJob saveData={saveData} key={index}/>)
             }
            </div>
         </div>

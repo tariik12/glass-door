@@ -20,7 +20,7 @@ const DetailsFeaturedCard = () => {
     return (
         <div>
             <h1 className='bg-purple-50 text-5xl text-center py-32'>View Details</h1>
-             <div className='grid grid-cols-2  gap-14 my-container mt-32'>
+             <div className='grid md:grid-cols-2  gap-14 my-container mt-32'>
         <div className=' rounded-lg p-10 '>
             <p><strong>Job Description :</strong> {job_description}</p>
             <p className='my-6'><strong>Job Responsibility:</strong>{job_responsibility}</p>

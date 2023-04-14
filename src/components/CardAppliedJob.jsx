@@ -6,8 +6,8 @@ import {
 } from '@heroicons/react/24/solid'
 
 
-const CardAppliedJob = ({save}) => {
-    const {company_picture,job_title,company_logo,company_name,rem_onsite_job,fulltime_part_time,location,salary}=save
+const CardAppliedJob = ({saveData}) => {
+    const {company_picture,job_title,company_name,rem_onsite_job,fulltime_part_time,location,salary}=saveData
     return (
         <div className=' my-container p-5 border flex justify-between items-center'>
          <div className='flex items-center gap-2'>
