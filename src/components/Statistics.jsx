@@ -17,8 +17,8 @@ const Statistics = () => {
       
     return (
         <div >
-
-            <h1 className='border text-center'>Assignment Mark</h1>
+             <h1 className='bg-purple-50 p-5 text-center text-5xl py-28'>Statistics</h1>
+            <h1 className='border text-center p-5'>Assignment Mark : Pie Chart</h1>
             
 
             

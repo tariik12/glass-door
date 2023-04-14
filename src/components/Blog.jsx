@@ -2,23 +2,24 @@ import React from 'react';
 
 const Blog = () => {
     return (
-        <div className='my-container'>
-            <div className='border p-5 my-5'>
+        <div className=''>
+             <h1 className='bg-purple-50 p-5 text-center text-5xl py-28 '>Blogs</h1>
+            <div className='border p-5 my-5 my-container'>
                 <h1>a. When should you use context API?</h1>
                 <strong>context API:</strong> <br />
                 <p> Context API is primarily used when some data needs to be accessible by many components at different nesting levels. Apply it sparingly because it makes component reuse more difficult. If you only want to avoid passing some props through many levels, component composition is often a simpler solution than context.</p>
             </div>
-            <div className='border p-5 my-5'>
+            <div className='border p-5 my-5 my-container'>
                 <h1>b. What is a custom hook?</h1>
                 <p>A custom hook is a special JavaScript function, Custom hooks follow a naming convention of starting with the word use, just like built-in hooks such as useState, useEffect, and useContext. Custom hooks can be used to abstract away complex logic and make your code more modular and easier to understand.</p>
             </div>
-            <div className='border p-5 my-5'>
+            <div className='border p-5 my-5 my-container'>
                 <h1>c. What is useRef?</h1>
             <p>useRef is a hook provided by React that allows you to create a mutable object that persists for the entire lifetime of the component. You can use the useRef hook to get a reference to a DOM element or to store any other mutable value that you want to persist across renders. <br />
 
             The useRef hook returns a single mutable ref object, which has a property called current. You can read and write to the current property of the ref object to store and access values.</p>
             </div>
-            <div className='border p-5 my-5'>
+            <div className='border p-5 my-5 my-container'>
                 <h1>d. What is useMemo?</h1>
             <p> In React, components can sometimes re-render unnecessarily, even if their props or   state haven't changed. This can happen when a component contains expensive computations or calculations that are repeated on every render. To avoid this unnecessary re-computation, we can use the useMemo hook.
 

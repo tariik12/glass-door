@@ -9,7 +9,7 @@ import {
 
 
 const FeaturedJobCard = ({featureJob,}) => {
-  console.log(featureJob)
+
     const {company_logo, company_name, con_info_email, con_info_phone, educational_requirements, experiences,fulltime_part_time, id, job_description, job_responsibility, job_title, location, rem_onsite_job, salary} =featureJob;
     return (
         <div className='border px-10 rounded-md p-2 '>
