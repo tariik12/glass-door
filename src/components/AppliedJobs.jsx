@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import CardAppliedJob from './CardAppliedJob';
     import { getFeatureCard } from '../assets/fakebd';
     import { toast } from 'react-hot-toast';
@@ -26,6 +26,11 @@ const AppliedJobs = () => {
                 toast.success('Successfully toasted!')
             }
     }
+    useEffect(()=>{
+        if(data.length==0){
+            toast.error('Please Add!')
+        }
+    },[data])
     return (
         <div>
             <h1 className='bg-purple-50 p-5 text-center text-5xl py-28'>Applied Jobs</h1>
