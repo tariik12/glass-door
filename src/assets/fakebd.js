@@ -16,7 +16,7 @@ const addToDb =(data)=>{
 }
 
 const getShoppingCart = () => {
-    let shoppingCart = {};
+    let shoppingCart = [];
     const storedCart = localStorage.getItem('bookmark');
     if (storedCart) {
         shoppingCart = JSON.parse(storedCart);
@@ -24,9 +24,6 @@ const getShoppingCart = () => {
   
     return shoppingCart;
 }
-
-
-
 export {
     addToDb,
     getShoppingCart,

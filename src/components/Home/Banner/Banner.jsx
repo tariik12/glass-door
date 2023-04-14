@@ -15,7 +15,7 @@ const Banner = () => {
             <button className="my-btn lg:mt-8 md:mt-8">Get Started</button>
             </div>
             <div className= 'flex justify-end'>
-                <img  className=' w-3/4   ' src="P3OLGJ1 copy 1.png" alt="" />
+                <img  className=' w-96 rounded   ' src="https://imagizer.imageshack.com/img924/4374/aQnXfl.jpg" alt="" />
             </div>
         </div>
         </div>

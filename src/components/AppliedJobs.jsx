@@ -8,10 +8,8 @@ import { toast } from 'react-hot-toast';
 
 const AppliedJobs = () => {
     const saveData =useContext(ProductContext)
-    // const getShoppingCar =getShoppingCart()
-    // console.log(getShoppingCar)
     console.log(saveData)
-//    if (!saveData.length === 0){
+    console.log(saveData)
         const [data,setData] = useState(saveData)
     const handleData =(id)=>{
             const k = saveData.filter(f =>f.rem_onsite_job === id)
@@ -24,20 +22,18 @@ const AppliedJobs = () => {
     return (
         <div>
             <h1 className='bg-purple-50 p-5 text-center text-5xl py-28'>Applied Jobs</h1>
-            <div className='flex justify-center '>
+            <div className='flex justify-end my-container gap-5 my-5 '>
                 <button onClick={() => handleData("Remote")}  className='my-btn'>Remote</button>
                 <button onClick={() => remoteData("Onsite")} className='my-btn'>Onsite</button>
-            </div>
-            {
+            </div >
+           <div>
+           {
                data.map((save,index)=>
                     <CardAppliedJob save={save} key={index}/>)
             }
+           </div>
         </div>
     );
-    // }
-    // else{
-    //      toast.error('No Job Applied')
-    // }
     
 };
 
